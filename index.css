@@ -5,6 +5,18 @@ body {
 	text-align: center;
 }
 
+.cherry-bomb-one-regular {
+	font-family: "Cherry Bomb One", system-ui;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  .mochiy-pop-p-one-regular {
+	font-family: "Mochiy Pop P One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
 h1 {
 	font-size: 24px;
 	line-height: 30px;
@@ -34,7 +46,7 @@ a:active {
 	background-color: #eee;
 	text-align: left;
 	border: 2px solid #22395E;
-	width: 704px;
+	width: auto;
 	line-height: 120%;
 	margin: 10px auto;
 	padding: 4px;
@@ -44,7 +56,7 @@ a:active {
 	background-color: #eee;
 	text-align: left;
 	border: 2px solid #22395E;
-	width: 704px;
+	width: auto;
 	margin:  20px auto 0 auto;
 	padding: 4px;
 }
@@ -64,15 +76,88 @@ td{
 }
 
 #bgi {
-	margin: 0;
-	padding: 0;
-	width: 700px;
-	text-align: center;
-	border-bottom: 2px solid #22395E;
-	overflow: hidden;
+	width: auto;
+	border-bottom: 0;
 }
 
 .cover {
-	max-width:  700px;
-	max-height: 850px;
+	max-width: 100%;
+	max-height: 90vh;
+}
+
+@media screen and (max-width: 980px) {
+	#main {
+		margin: 1em 10px;
+	}
+	#comment {
+		margin: 1em 10px;
+	}
+	div.comic-box {
+		margin: 1em 10px;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	div.sep-thumb {
+		width: calc((100vw - 32px) / 3 - 12px);
+		margin: 5px;
+		float: left;
+	}
+	div.sep-thumb div.top_image {
+		width: calc((100vw - 32px) / 3 - 12px);
+		height: calc((100vw - 32px) / 3 - 12px);
+		text-align: center;
+	}
+	div.sep-thumb div.top_image img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+.comic-box {
+	max-width: 810px;
+	width: auto;
+	text-align: center;
+	background-color: #eee;
+	border: 2px solid #22395E;
+	margin: 20px auto 0 auto;
+	padding: 4px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+hr.dot_line {
+	border: 0;
+	border-top: dotted 3px;
+	margin: 10px;
+}
+
+form.post {
+	max-width: 810px;
+	width: auto;
+	margin: 1em auto;
+	color: black;
+	font-size: 16px;
+}
+
+form.post a {
+	color: black;
+	text-decoration: underline;
+}
+
+a.post {
+	color: red;
+	text-decoration: none;
+}
+
+#grad {
+	background-image: linear-gradient(lightblue, white);
+  }
+
+
+
+img.cover {
+	filter: drop-shadow(0 0 0.75rem rgb(36, 145, 182));
+
 }

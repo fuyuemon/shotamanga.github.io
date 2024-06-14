@@ -58,7 +58,10 @@ form.post a:hover {
 	background-color: #f00;
 }
 
-.center {}
+.center {
+	max-width: 100%;
+	max-height: 90vh;
+}
 
 .image {
 	margin:42px auto;
@@ -73,4 +76,72 @@ form.post a:hover {
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
+}
+
+#comment {
+	background-color: #eee;
+	text-align: left;
+	border: 2px solid #22395E;
+	width: 704px;
+	margin:  20px auto 0 auto;
+	padding: 4px;
+}
+
+@media screen and (max-width: 520px) {
+	div.sep-thumb {
+		width: calc((100vw - 32px) / 3 - 12px);
+		margin: 5px;
+		float: left;
+	}
+	div.sep-thumb div.top_image {
+		width: calc((100vw - 32px) / 3 - 12px);
+		height: calc((100vw - 32px) / 3 - 12px);
+		text-align: center;
+	}
+	div.sep-thumb div.top_image img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+.comic-box {
+	max-width: 810px;
+	width: auto;
+	text-align: center;
+	background-color: #eee;
+	border: 2px solid #22395E;
+	margin: 20px auto 0 auto;
+	padding: 4px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+hr.dot_line {
+	border: 0;
+	border-top: dotted 2px gray;
+	margin: 10px;
+}
+
+form.post {
+	max-width: 810px;
+	width: auto;
+	margin: 1em auto;
+	color: black;
+	font-size: 16px;
+}
+
+form.post a {
+	color: black;
+	text-decoration: underline;
+}
+
+a.post {
+	color: red;
+	text-decoration: none;
+}
+
+.cover {
+	max-width: 100%;
+	max-height: 90vh;
 }
